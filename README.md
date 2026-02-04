@@ -1,5 +1,4 @@
-# 🌌 Alchemy - AI Specification Compiler
-![Landing Page](./assets/LandingPage.PNG)
+# Alchemy - Bring Your Ideas to Life
 
 **Turning thoughts into technical blueprints. Where ideas meet architecture.**
 
