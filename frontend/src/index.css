@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Alchemy Design System - Modern AI Aesthetic
+  =============================================
+  Clean, sophisticated design inspired by ChatGPT/Grok
+  High contrast, minimal, confident typography
+*/
+
+@layer base {
+  :root {
+    /* Core backgrounds - clean whites */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+
+    /* Cards - subtle elevation */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    /* Primary - bold black for CTAs */
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - light gray for subtle elements */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+
+    /* Muted - subtle backgrounds */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - interactive highlight */
+    --accent: 0 0% 95%;
+    --accent-foreground: 0 0% 9%;
+
+    /* States */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders - very subtle */
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 0% 9%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 92%;
+    --sidebar-ring: 0 0% 9%;
+
+    /* Custom Alchemy tokens */
+    --surface-elevated: 0 0% 100%;
+    --surface-sunken: 0 0% 97%;
+    --text-primary: 0 0% 9%;
+    --text-secondary: 0 0% 40%;
+    --text-tertiary: 0 0% 55%;
+    --divider: 0 0% 92%;
+    --progress-track: 0 0% 92%;
+    --progress-fill: 0 0% 20%;
+    
+    /* Interactive elements */
+    --input-bg: 0 0% 98%;
+    --input-border: 0 0% 88%;
+    --input-focus: 0 0% 9%;
+    --chip-bg: 0 0% 98%;
+    --chip-border: 0 0% 88%;
+    --chip-hover: 0 0% 94%;
+  }
+
+  .dark {
+    /* Core backgrounds - deep blacks */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - white for CTAs on dark */
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 18%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 85%;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 85%;
+
+    --surface-elevated: 0 0% 12%;
+    --surface-sunken: 0 0% 5%;
+    --text-primary: 0 0% 95%;
+    --text-secondary: 0 0% 65%;
+    --text-tertiary: 0 0% 50%;
+    --divider: 0 0% 20%;
+    --progress-track: 0 0% 20%;
+    --progress-fill: 0 0% 75%;
+    
+    --input-bg: 0 0% 12%;
+    --input-border: 0 0% 22%;
+    --input-focus: 0 0% 95%;
+    --chip-bg: 0 0% 12%;
+    --chip-border: 0 0% 22%;
+    --chip-hover: 0 0% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Typography scale - confident, modern */
+  h1 {
+    font-family: 'Sora', 'Inter', sans-serif;
+    @apply text-4xl font-bold tracking-tight;
+    color: hsl(var(--text-primary));
+  }
+
+  h2 {
+    @apply text-xl font-semibold tracking-tight;
+    color: hsl(var(--text-primary));
+  }
+
+  h3 {
+    @apply text-base font-semibold;
+    color: hsl(var(--text-primary));
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+    color: hsl(var(--text-secondary));
+  }
+
+  /* Smooth transitions */
+  button, a, input, textarea {
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+@layer components {
+  /* Modern pill input - Grok style */
+  .input-pill {
+    @apply w-full px-5 py-4 rounded-full;
+    @apply text-base;
+    background: hsl(var(--input-bg));
+    border: 1px solid hsl(var(--input-border));
+    color: hsl(var(--text-primary));
+    @apply placeholder:text-muted-foreground;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring/20;
+  }
+
+  .input-pill-lg {
+    @apply input-pill py-5 text-lg;
+  }
+
+  /* Chip/Tag buttons */
+  .chip {
+    @apply inline-flex items-center gap-2 px-4 py-2.5 rounded-full;
+    @apply text-sm font-medium;
+    background: hsl(var(--chip-bg));
+    border: 1px solid hsl(var(--chip-border));
+    color: hsl(var(--text-secondary));
+    @apply hover:bg-accent cursor-pointer;
+  }
+
+  .chip-active {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+
+  /* Icon button - circular */
+  .btn-icon {
+    @apply flex items-center justify-center;
+    @apply w-12 h-12 rounded-full;
+    @apply bg-primary text-primary-foreground;
+    @apply hover:opacity-90;
+    @apply disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-icon-sm {
+    @apply w-10 h-10;
+  }
+
+  .btn-icon-ghost {
+    @apply bg-transparent text-text-secondary;
+    @apply hover:bg-accent hover:text-foreground;
+  }
+
+  /* Panel component base */
+  .panel {
+    @apply bg-card rounded-xl border border-border;
+  }
+
+  .panel-elevated {
+    background: hsl(var(--surface-elevated));
+    @apply shadow-sm;
+  }
+
+  /* Divider */
+  .divider {
+    background: hsl(var(--divider));
+    @apply h-px w-full;
+  }
+
+  /* Mode selector pills */
+  .mode-pill {
+    @apply px-4 py-2 text-sm font-medium rounded-full;
+    color: hsl(var(--text-secondary));
+    @apply hover:bg-accent;
+  }
+
+  .mode-pill-active {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  /* File chip */
+  .file-chip {
+    @apply px-4 py-2.5 text-sm font-medium rounded-full;
+    background: hsl(var(--chip-bg));
+    border: 1px solid hsl(var(--chip-border));
+    color: hsl(var(--text-secondary));
+    @apply hover:bg-accent cursor-pointer whitespace-nowrap;
+  }
+
+  .file-chip-active {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+
+  /* Message card */
+  .message-card {
+    @apply p-4 rounded-2xl;
+    background: hsl(var(--surface-sunken));
+  }
+
+  /* Option card - modern selection */
+  .option-card {
+    @apply p-4 rounded-xl cursor-pointer;
+    background: hsl(var(--chip-bg));
+    border: 1px solid hsl(var(--chip-border));
+    @apply hover:border-ring/40 hover:bg-accent;
+  }
+
+  .option-card-selected {
+    @apply border-primary bg-accent;
+  }
+
+  /* Progress bar */
+  .progress-track {
+    background: hsl(var(--progress-track));
+    @apply h-1.5 rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    background: hsl(var(--progress-fill));
+    @apply h-full rounded-full transition-all duration-500 ease-out;
+  }
+
+  /* Input styling */
+  .input-minimal {
+    @apply w-full px-4 py-3 rounded-xl;
+    background: hsl(var(--input-bg));
+    border: 1px solid hsl(var(--input-border));
+    @apply placeholder:text-muted-foreground;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring/20;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium;
+    @apply hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply px-5 py-2.5 rounded-full font-medium;
+    background: hsl(var(--chip-bg));
+    border: 1px solid hsl(var(--chip-border));
+    color: hsl(var(--text-secondary));
+    @apply hover:bg-accent;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 rounded-full font-medium;
+    color: hsl(var(--text-secondary));
+    @apply hover:bg-accent hover:text-foreground;
+  }
+
+  /* Quick action buttons */
+  .quick-action {
+    @apply inline-flex items-center gap-2 px-4 py-2.5 rounded-full;
+    @apply text-sm font-medium;
+    background: hsl(var(--chip-bg));
+    border: 1px solid hsl(var(--chip-border));
+    color: hsl(var(--text-primary));
+    @apply hover:bg-accent hover:border-border cursor-pointer;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}

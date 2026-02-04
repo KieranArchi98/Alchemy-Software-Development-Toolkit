@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "id": "test-123",
+    "created": "2026-02-04T07:28:02.481954",
+    "lastModified": "2026-02-04T07:28:02.508989",
+    "phase": "discovery",
+    "progress": 5
+  },
+  "project": {
+    "name": "A Tool To Help",
+    "tagline": null,
+    "purpose": "A tool to help developers plan software projects",
+    "goals": [],
+    "targetAudience": [],
+    "constraints": [],
+    "assumptions": []
+  },
+  "requirements": {
+    "functional": [
+      {
+        "id": "FR-001",
+        "title": "User can create a new project",
+        "description": "Users should be able to initialize a new project from an idea",
+        "priority": "critical",
+        "acceptanceCriteria": [],
+        "dependencies": []
+      },
+      {
+        "id": "FR-002",
+        "title": "User can chat with AI assistant",
+        "description": "Users can send messages to AI for guidance",
+        "priority": "high",
+        "acceptanceCriteria": [],
+        "dependencies": []
+      }
+    ],
+    "nonFunctional": {
+      "performance": [],
+      "security": [],
+      "scalability": [],
+      "usability": [],
+      "reliability": []
+    }
+  },
+  "architecture": {
+    "archetype": "web-app",
+    "deploymentModel": "local-only",
+    "frontend": {
+      "framework": null,
+      "stateManagement": null,
+      "styling": null,
+      "pages": [
+        {
+          "id": "home",
+          "name": "Home",
+          "route": "/",
+          "description": "Landing page",
+          "components": [],
+          "authentication": false
+        },
+        {
+          "id": "workspace",
+          "name": "Workspace",
+          "route": "/workspace",
+          "description": "Main workspace",
+          "components": [],
+          "authentication": false
+        }
+      ],
+      "components": [],
+      "layout": null
+    },
+    "backend": {
+      "framework": null,
+      "language": null,
+      "architecture": "modular",
+      "services": [],
+      "apis": [
+        {
+          "id": "post-projects",
+          "endpoint": "/projects",
+          "method": "POST",
+          "description": "Create project",
+          "authentication": false,
+          "requestSchema": null,
+          "responseSchema": null
+        },
+        {
+          "id": "get-projects-{id}",
+          "endpoint": "/projects/{id}",
+          "method": "GET",
+          "description": "Get project",
+          "authentication": false,
+          "requestSchema": null,
+          "responseSchema": null
+        }
+      ],
+      "database": null
+    },
+    "integration": {
+      "apiStyle": "REST",
+      "authentication": "none",
+      "externalServices": []
+    }
+  },
+  "technology": {
+    "frontend": [],
+    "backend": [],
+    "database": [],
+    "infrastructure": [],
+    "devTools": []
+  },
+  "implementation": {
+    "phases": [],
+    "mvpScope": []
+  },
+  "aiUsage": {
+    "models": [],
+    "features": []
+  }
+}

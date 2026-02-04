@@ -1,0 +1,441 @@
+{
+  "id": "99245d34",
+  "title": "'search' Mobile App Created",
+  "idea": "'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.",
+  "progress": 5,
+  "lastSaved": "2026-02-04T09:26:34.719470",
+  "activePhase": "discovery",
+  "activeChatMode": "guided",
+  "spec": {
+    "version": "1.0.0",
+    "metadata": {
+      "id": "99245d34",
+      "created": "2026-02-04T09:26:34.717332",
+      "lastModified": "2026-02-04T09:26:34.717917",
+      "phase": "discovery",
+      "progress": 5
+    },
+    "project": {
+      "name": "'search' Mobile App Created",
+      "tagline": null,
+      "purpose": "'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.",
+      "goals": [],
+      "targetAudience": [],
+      "constraints": [],
+      "assumptions": []
+    },
+    "requirements": {
+      "functional": [],
+      "nonFunctional": {
+        "performance": [],
+        "security": [],
+        "scalability": [],
+        "usability": [],
+        "reliability": []
+      }
+    },
+    "architecture": {
+      "archetype": "web-app",
+      "deploymentModel": "local-only",
+      "frontend": {
+        "framework": null,
+        "stateManagement": null,
+        "styling": null,
+        "pages": [],
+        "components": [],
+        "layout": null
+      },
+      "backend": {
+        "framework": null,
+        "language": null,
+        "architecture": "modular",
+        "services": [],
+        "apis": [],
+        "database": null
+      },
+      "integration": {
+        "apiStyle": "REST",
+        "authentication": "none",
+        "externalServices": []
+      }
+    },
+    "technology": {
+      "frontend": [],
+      "backend": [],
+      "database": [],
+      "infrastructure": [],
+      "devTools": []
+    },
+    "implementation": {
+      "phases": [
+        {
+          "id": "PHASE-1",
+          "name": "Project Foundation",
+          "order": 1,
+          "description": "Setup project structure, tooling, and core infrastructure.",
+          "tasks": [
+            {
+              "id": "TASK-001",
+              "title": "Initialize version control (Git)",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-002",
+              "title": "Setup Frontend Framework project structure",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-003",
+              "title": "Setup Backend Framework project structure",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-004",
+              "title": "Configure linting and formatting",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "PHASE-2",
+          "name": "Backend Core",
+          "order": 2,
+          "description": "Implement core backend services, database schema, and authentication.",
+          "tasks": [
+            {
+              "id": "TASK-005",
+              "title": "Define API standard / request-response format",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "PHASE-3",
+          "name": "Frontend Skeleton",
+          "order": 3,
+          "description": "Build the frontend shell, navigation, and reusable UI components.",
+          "tasks": [
+            {
+              "id": "TASK-006",
+              "title": "Setup styling system (CSS)",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-007",
+              "title": "Implement client-side routing and navigation",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "PHASE-4",
+          "name": "Core Features (MVP)",
+          "order": 4,
+          "description": "Implement primary pages and business logic features.",
+          "tasks": [
+            {
+              "id": "TASK-008",
+              "title": "Integrate Frontend with Backend APIs",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "id": "PHASE-5",
+          "name": "Polish & Launch",
+          "order": 5,
+          "description": "Final testing, optimization, and documentation.",
+          "tasks": [
+            {
+              "id": "TASK-009",
+              "title": "Perform end-to-end testing",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-010",
+              "title": "Optimize performance and bundle size",
+              "status": "pending"
+            },
+            {
+              "id": "TASK-011",
+              "title": "Write deployment documentation",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "mvpScope": []
+    },
+    "aiUsage": {
+      "models": [],
+      "features": []
+    }
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "content": "'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for."
+    },
+    {
+      "id": "requirements",
+      "title": "Requirements",
+      "content": "No requirements defined."
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "content": "Archetype: web-app"
+    },
+    {
+      "id": "constraints",
+      "title": "Constraints",
+      "content": "No constraints defined."
+    }
+  ],
+  "files": [
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "type": "design",
+      "content": "# 'search' Mobile App Created\n**Version**: 1.0.0 | **Generated**: 2026-02-04 09:26 UTC\n\n## 1. Executive Summary\n'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## 2. Requirements\n### 2.1 Functional Requirements\n_No functional requirements defined._\n\n### 2.2 Non-Functional Requirements\n_No non-functional requirements defined._\n\n## 3. Architecture\n**System Archetype**: web-app\n\n### 3.1 Frontend\n\n### 3.2 Backend\n\n## 4. Technology Stack\n| Category | Technology |\n|----------|------------|\n\n## 5. Implementation Roadmap\n### Phase 1: Project Foundation\n_Setup project structure, tooling, and core infrastructure._\n- [ ] Initialize version control (Git)\n- [ ] Setup Frontend Framework project structure\n- [ ] Setup Backend Framework project structure\n- [ ] Configure linting and formatting\n\n### Phase 2: Backend Core\n_Implement core backend services, database schema, and authentication._\n- [ ] Define API standard / request-response format\n\n### Phase 3: Frontend Skeleton\n_Build the frontend shell, navigation, and reusable UI components._\n- [ ] Setup styling system (CSS)\n- [ ] Implement client-side routing and navigation\n\n### Phase 4: Core Features (MVP)\n_Implement primary pages and business logic features._\n- [ ] Integrate Frontend with Backend APIs\n\n### Phase 5: Polish & Launch\n_Final testing, optimization, and documentation._\n- [ ] Perform end-to-end testing\n- [ ] Optimize performance and bundle size\n- [ ] Write deployment documentation\n\n\n---\n*Generated by Alchemy*"
+    },
+    {
+      "id": "spec-json",
+      "name": "Spec (JSON)",
+      "type": "context",
+      "content": "{\n  \"version\": \"1.0.0\",\n  \"metadata\": {\n    \"id\": \"99245d34\",\n    \"created\": \"2026-02-04T09:26:34.717332\",\n    \"lastModified\": \"2026-02-04T09:26:34.717917\",\n    \"phase\": \"discovery\",\n    \"progress\": 5\n  },\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"tagline\": null,\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\",\n    \"goals\": [],\n    \"targetAudience\": [],\n    \"constraints\": [],\n    \"assumptions\": []\n  },\n  \"requirements\": {\n    \"functional\": [],\n    \"nonFunctional\": {\n      \"performance\": [],\n      \"security\": [],\n      \"scalability\": [],\n      \"usability\": [],\n      \"reliability\": []\n    }\n  },\n  \"architecture\": {\n    \"archetype\": \"web-app\",\n    \"deploymentModel\": \"local-only\",\n    \"frontend\": {\n      \"framework\": null,\n      \"stateManagement\": null,\n      \"styling\": null,\n      \"pages\": [],\n      \"components\": [],\n      \"layout\": null\n    },\n    \"backend\": {\n      \"framework\": null,\n      \"language\": null,\n      \"architecture\": \"modular\",\n      \"services\": [],\n      \"apis\": [],\n      \"database\": null\n    },\n    \"integration\": {\n      \"apiStyle\": \"REST\",\n      \"authentication\": \"none\",\n      \"externalServices\": []\n    }\n  },\n  \"technology\": {\n    \"frontend\": [],\n    \"backend\": [],\n    \"database\": [],\n    \"infrastructure\": [],\n    \"devTools\": []\n  },\n  \"implementation\": {\n    \"phases\": [\n      {\n        \"id\": \"PHASE-1\",\n        \"name\": \"Project Foundation\",\n        \"order\": 1,\n        \"description\": \"Setup project structure, tooling, and core infrastructure.\",\n        \"tasks\": [\n          {\n            \"id\": \"TASK-001\",\n            \"title\": \"Initialize version control (Git)\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-002\",\n            \"title\": \"Setup Frontend Framework project structure\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-003\",\n            \"title\": \"Setup Backend Framework project structure\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-004\",\n            \"title\": \"Configure linting and formatting\",\n            \"status\": \"pending\"\n          }\n        ]\n      },\n      {\n        \"id\": \"PHASE-2\",\n        \"name\": \"Backend Core\",\n        \"order\": 2,\n        \"description\": \"Implement core backend services, database schema, and authentication.\",\n        \"tasks\": [\n          {\n            \"id\": \"TASK-005\",\n            \"title\": \"Define API standard / request-response format\",\n            \"status\": \"pending\"\n          }\n        ]\n      },\n      {\n        \"id\": \"PHASE-3\",\n        \"name\": \"Frontend Skeleton\",\n        \"order\": 3,\n        \"description\": \"Build the frontend shell, navigation, and reusable UI components.\",\n        \"tasks\": [\n          {\n            \"id\": \"TASK-006\",\n            \"title\": \"Setup styling system (CSS)\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-007\",\n            \"title\": \"Implement client-side routing and navigation\",\n            \"status\": \"pending\"\n          }\n        ]\n      },\n      {\n        \"id\": \"PHASE-4\",\n        \"name\": \"Core Features (MVP)\",\n        \"order\": 4,\n        \"description\": \"Implement primary pages and business logic features.\",\n        \"tasks\": [\n          {\n            \"id\": \"TASK-008\",\n            \"title\": \"Integrate Frontend with Backend APIs\",\n            \"status\": \"pending\"\n          }\n        ]\n      },\n      {\n        \"id\": \"PHASE-5\",\n        \"name\": \"Polish & Launch\",\n        \"order\": 5,\n        \"description\": \"Final testing, optimization, and documentation.\",\n        \"tasks\": [\n          {\n            \"id\": \"TASK-009\",\n            \"title\": \"Perform end-to-end testing\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-010\",\n            \"title\": \"Optimize performance and bundle size\",\n            \"status\": \"pending\"\n          },\n          {\n            \"id\": \"TASK-011\",\n            \"title\": \"Write deployment documentation\",\n            \"status\": \"pending\"\n          }\n        ]\n      }\n    ],\n    \"mvpScope\": []\n  },\n  \"aiUsage\": {\n    \"models\": [],\n    \"features\": []\n  }\n}"
+    },
+    {
+      "id": "roadmap",
+      "name": "Roadmap",
+      "type": "roadmap",
+      "content": "# Implementation Roadmap\n\n## Phase 1: Project Foundation\n_Setup project structure, tooling, and core infrastructure._\n\n- [ ] Initialize version control (Git)\n- [ ] Setup Frontend Framework project structure\n- [ ] Setup Backend Framework project structure\n- [ ] Configure linting and formatting\n\n## Phase 2: Backend Core\n_Implement core backend services, database schema, and authentication._\n\n- [ ] Define API standard / request-response format\n\n## Phase 3: Frontend Skeleton\n_Build the frontend shell, navigation, and reusable UI components._\n\n- [ ] Setup styling system (CSS)\n- [ ] Implement client-side routing and navigation\n\n## Phase 4: Core Features (MVP)\n_Implement primary pages and business logic features._\n\n- [ ] Integrate Frontend with Backend APIs\n\n## Phase 5: Polish & Launch\n_Final testing, optimization, and documentation._\n\n- [ ] Perform end-to-end testing\n- [ ] Optimize performance and bundle size\n- [ ] Write deployment documentation\n"
+    },
+    {
+      "id": "prompts",
+      "name": "AI Prompts",
+      "type": "prompts",
+      "content": "# AI Implementation Prompt Sequence\n\n## Step 1: Project Foundation\n# Role: Expert Software Engineer\nYou are building ''search' Mobile App Created'.\nDescription: 'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## Current Objective: Phase 1 - Project Foundation\nSetup project structure, tooling, and core infrastructure.\n\n## Requirements Checklist\nImplement the following strictly in order:\n- [ ] Initialize version control (Git)\n- [ ] Setup Frontend Framework project structure\n- [ ] Setup Backend Framework project structure\n- [ ] Configure linting and formatting\n\n## Project Context (JSON Source of Truth)\nUse this specification to derive technical details (Frameworks, naming, schemas).\n```json\n{\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\"\n  },\n  \"technology\": {},\n  \"architecture\": {\n    \"backend\": {\n      \"architecture\": \"modular\"\n    }\n  }\n}\n```\n\n## Guidelines\n1. Write production-ready code.\n2. Create all necessary files and folders.\n3. If a file exists, update it safely.\n4. Follow the architecture defined in the Context exactly.\n5. Do not invent features not listed in the Checklist.\n\n---\n\n## Step 2: Backend Core\n# Role: Expert Software Engineer\nYou are building ''search' Mobile App Created'.\nDescription: 'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## Current Objective: Phase 2 - Backend Core\nImplement core backend services, database schema, and authentication.\n\n## Requirements Checklist\nImplement the following strictly in order:\n- [ ] Define API standard / request-response format\n\n## Project Context (JSON Source of Truth)\nUse this specification to derive technical details (Frameworks, naming, schemas).\n```json\n{\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\"\n  },\n  \"technology\": {},\n  \"architecture\": {\n    \"backend\": {\n      \"architecture\": \"modular\"\n    }\n  }\n}\n```\n\n## Guidelines\n1. Write production-ready code.\n2. Create all necessary files and folders.\n3. If a file exists, update it safely.\n4. Follow the architecture defined in the Context exactly.\n5. Do not invent features not listed in the Checklist.\n\n---\n\n## Step 3: Frontend Skeleton\n# Role: Expert Software Engineer\nYou are building ''search' Mobile App Created'.\nDescription: 'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## Current Objective: Phase 3 - Frontend Skeleton\nBuild the frontend shell, navigation, and reusable UI components.\n\n## Requirements Checklist\nImplement the following strictly in order:\n- [ ] Setup styling system (CSS)\n- [ ] Implement client-side routing and navigation\n\n## Project Context (JSON Source of Truth)\nUse this specification to derive technical details (Frameworks, naming, schemas).\n```json\n{\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\"\n  },\n  \"technology\": {},\n  \"architecture\": {\n    \"frontend\": {}\n  }\n}\n```\n\n## Guidelines\n1. Write production-ready code.\n2. Create all necessary files and folders.\n3. If a file exists, update it safely.\n4. Follow the architecture defined in the Context exactly.\n5. Do not invent features not listed in the Checklist.\n\n---\n\n## Step 4: Core Features (MVP)\n# Role: Expert Software Engineer\nYou are building ''search' Mobile App Created'.\nDescription: 'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## Current Objective: Phase 4 - Core Features (MVP)\nImplement primary pages and business logic features.\n\n## Requirements Checklist\nImplement the following strictly in order:\n- [ ] Integrate Frontend with Backend APIs\n\n## Project Context (JSON Source of Truth)\nUse this specification to derive technical details (Frameworks, naming, schemas).\n```json\n{\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\"\n  },\n  \"technology\": {},\n  \"architecture\": {\n    \"backend\": {\n      \"architecture\": \"modular\"\n    },\n    \"frontend\": {}\n  },\n  \"requirements\": {\n    \"nonFunctional\": {}\n  }\n}\n```\n\n## Guidelines\n1. Write production-ready code.\n2. Create all necessary files and folders.\n3. If a file exists, update it safely.\n4. Follow the architecture defined in the Context exactly.\n5. Do not invent features not listed in the Checklist.\n\n---\n\n## Step 5: Polish & Launch\n# Role: Expert Software Engineer\nYou are building ''search' Mobile App Created'.\nDescription: 'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\n\n## Current Objective: Phase 5 - Polish & Launch\nFinal testing, optimization, and documentation.\n\n## Requirements Checklist\nImplement the following strictly in order:\n- [ ] Perform end-to-end testing\n- [ ] Optimize performance and bundle size\n- [ ] Write deployment documentation\n\n## Project Context (JSON Source of Truth)\nUse this specification to derive technical details (Frameworks, naming, schemas).\n```json\n{\n  \"project\": {\n    \"name\": \"'search' Mobile App Created\",\n    \"purpose\": \"'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.\"\n  },\n  \"technology\": {}\n}\n```\n\n## Guidelines\n1. Write production-ready code.\n2. Create all necessary files and folders.\n3. If a file exists, update it safely.\n4. Follow the architecture defined in the Context exactly.\n5. Do not invent features not listed in the Checklist.\n\n---\n"
+    }
+  ],
+  "messages": [
+    {
+      "id": "b3093747",
+      "role": "assistant",
+      "content": "I've analyzed your idea. Let's start building your specification by answering a few key questions.",
+      "timestamp": "2026-02-04T09:26:34.717809",
+      "context": null,
+      "options": null,
+      "selectedOption": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "333b2700",
+      "timestamp": "2026-02-04T09:26:34.717332",
+      "label": "Project Created",
+      "spec": {
+        "version": "1.0.0",
+        "metadata": {
+          "id": "99245d34",
+          "created": "2026-02-04T09:26:34.717332",
+          "lastModified": "2026-02-04T09:26:34.717917",
+          "phase": "discovery",
+          "progress": 5
+        },
+        "project": {
+          "name": "'search' Mobile App Created",
+          "tagline": null,
+          "purpose": "'Search' mobile app created using react-native. Train AI model on user inputs and have it procedural generate an endless amount of information for them to search through. Understand them, tailor information to their personality, and help them find the answers that they're looking for.",
+          "goals": [],
+          "targetAudience": [],
+          "constraints": [],
+          "assumptions": []
+        },
+        "requirements": {
+          "functional": [],
+          "nonFunctional": {
+            "performance": [],
+            "security": [],
+            "scalability": [],
+            "usability": [],
+            "reliability": []
+          }
+        },
+        "architecture": {
+          "archetype": "web-app",
+          "deploymentModel": "local-only",
+          "frontend": {
+            "framework": null,
+            "stateManagement": null,
+            "styling": null,
+            "pages": [],
+            "components": [],
+            "layout": null
+          },
+          "backend": {
+            "framework": null,
+            "language": null,
+            "architecture": "modular",
+            "services": [],
+            "apis": [],
+            "database": null
+          },
+          "integration": {
+            "apiStyle": "REST",
+            "authentication": "none",
+            "externalServices": []
+          }
+        },
+        "technology": {
+          "frontend": [],
+          "backend": [],
+          "database": [],
+          "infrastructure": [],
+          "devTools": []
+        },
+        "implementation": {
+          "phases": [
+            {
+              "id": "PHASE-1",
+              "name": "Project Foundation",
+              "order": 1,
+              "description": "Setup project structure, tooling, and core infrastructure.",
+              "tasks": [
+                {
+                  "id": "TASK-001",
+                  "title": "Initialize version control (Git)",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-002",
+                  "title": "Setup Frontend Framework project structure",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-003",
+                  "title": "Setup Backend Framework project structure",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-004",
+                  "title": "Configure linting and formatting",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "PHASE-2",
+              "name": "Backend Core",
+              "order": 2,
+              "description": "Implement core backend services, database schema, and authentication.",
+              "tasks": [
+                {
+                  "id": "TASK-005",
+                  "title": "Define API standard / request-response format",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "PHASE-3",
+              "name": "Frontend Skeleton",
+              "order": 3,
+              "description": "Build the frontend shell, navigation, and reusable UI components.",
+              "tasks": [
+                {
+                  "id": "TASK-006",
+                  "title": "Setup styling system (CSS)",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-007",
+                  "title": "Implement client-side routing and navigation",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "PHASE-4",
+              "name": "Core Features (MVP)",
+              "order": 4,
+              "description": "Implement primary pages and business logic features.",
+              "tasks": [
+                {
+                  "id": "TASK-008",
+                  "title": "Integrate Frontend with Backend APIs",
+                  "status": "pending"
+                }
+              ]
+            },
+            {
+              "id": "PHASE-5",
+              "name": "Polish & Launch",
+              "order": 5,
+              "description": "Final testing, optimization, and documentation.",
+              "tasks": [
+                {
+                  "id": "TASK-009",
+                  "title": "Perform end-to-end testing",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-010",
+                  "title": "Optimize performance and bundle size",
+                  "status": "pending"
+                },
+                {
+                  "id": "TASK-011",
+                  "title": "Write deployment documentation",
+                  "status": "pending"
+                }
+              ]
+            }
+          ],
+          "mvpScope": []
+        },
+        "aiUsage": {
+          "models": [],
+          "features": []
+        }
+      },
+      "progress": 5
+    }
+  ],
+  "currentQuestion": {
+    "id": "Q001",
+    "order": 1,
+    "category": "foundation",
+    "question": "What type of application are you building?",
+    "description": "This helps us understand the fundamental architecture and deployment model.",
+    "answers": [
+      {
+        "id": "web-app",
+        "label": "Web Application",
+        "description": "Browser-based application with frontend and backend",
+        "value": "web-app",
+        "recommended": true,
+        "metadata": null
+      },
+      {
+        "id": "mobile-app",
+        "label": "Mobile Application",
+        "description": "Native or cross-platform mobile app",
+        "value": "mobile-app",
+        "recommended": true,
+        "metadata": null
+      },
+      {
+        "id": "api-service",
+        "label": "API Service",
+        "description": "Backend-only service with REST/GraphQL API",
+        "value": "api-service",
+        "recommended": true,
+        "metadata": null
+      }
+    ],
+    "multiSelect": false,
+    "aiDefault": "web-app"
+  }
+}

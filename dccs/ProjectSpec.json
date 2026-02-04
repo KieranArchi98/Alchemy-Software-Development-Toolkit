@@ -1,0 +1,250 @@
+{
+    "project": {
+        "name": "Alchemy",
+        "tagline": "Turn ideas into AI-ready software specifications",
+        "description": "Alchemy is a deterministic, AI-assisted specification compiler that guides users from an initial software idea to a fully defined MVP design, implementation roadmap, and sequential prompt list suitable for AI IDEs.",
+        "scope": {
+            "in_scope": [
+                "Guided software design via structured questions",
+                "Dynamic AI-generated follow-up questions",
+                "Canonical JSON project specification generation",
+                "Human-readable design documentation generation",
+                "Implementation roadmap with phases and checklists",
+                "Sequential AI prompt generation for MVP bootstrapping",
+                "Local-only project storage with checkpoints",
+                "Export of documentation, JSON, and prompts"
+            ],
+            "out_of_scope": [
+                "Executing or running generated code",
+                "Hosting or deploying user projects",
+                "Authentication or multi-user accounts (initially)",
+                "Managing external repositories automatically"
+            ]
+        }
+    },
+    "users": {
+        "target_audience": [
+            "Solo developers",
+            "Founders",
+            "Non-technical builders",
+            "Technical users using AI IDEs"
+        ],
+        "assumptions": [
+            "User may not know what technical decisions are required",
+            "User may change their mind during the process",
+            "User wants AI defaults when unsure",
+            "User wants reproducible, structured outputs"
+        ]
+    },
+    "core_principles": {
+        "determinism_over_conversation": true,
+        "json_is_source_of_truth": true,
+        "ai_as_inference_engine": true,
+        "explicit_state_mutation_only": true,
+        "linear_by_default_overridable": true
+    },
+    "frontend": {
+        "architecture": {
+            "framework": "React or Next.js",
+            "state_model": "Local application state (no auth, no backend persistence initially)",
+            "layout": "Two-column workspace with persistent project view and chat interaction panel"
+        },
+        "views": {
+            "home": {
+                "features": [
+                    "Project intake text box",
+                    "Previous project cards (timestamped artifacts)",
+                    "Create new project action"
+                ]
+            },
+            "workspace": {
+                "left_panel": [
+                    "Living project specification view",
+                    "File viewer (read-only)",
+                    "Generated artifact carousel (JSON, docs, roadmap, prompts)"
+                ],
+                "right_panel": [
+                    "Chat interface",
+                    "Chat mode selector",
+                    "Message history per mode"
+                ]
+            }
+        },
+        "chat_modes": {
+            "guided_roadmap": {
+                "description": "Linear guided question flow that builds the project specification",
+                "can_mutate_state": true,
+                "uses_question_schema": true,
+                "creates_checkpoints": true
+            },
+            "research": {
+                "description": "Read-only exploration and research mode",
+                "can_mutate_state": false,
+                "no_checkpoints": true
+            },
+            "update_edit": {
+                "description": "Allows targeted modifications to existing decisions",
+                "can_mutate_state": true,
+                "does_not_advance_roadmap": true
+            }
+        },
+        "ux_rules": {
+            "phase_navigation_hidden": true,
+            "progress_indicator_subtle": true,
+            "undo_via_checkpoints": true,
+            "ai_defaults_available": true
+        }
+    },
+    "backend": {
+        "role": "Specification compiler and AI orchestration engine",
+        "language": "Python",
+        "responsibilities": [
+            "Manage canonical project state",
+            "Serve guided roadmap questions",
+            "Inject dynamic AI-generated questions",
+            "Classify user intent",
+            "Apply structured state mutations",
+            "Generate documentation, roadmaps, and prompts",
+            "Manage checkpoints and restoration",
+            "Coordinate LLM calls"
+        ],
+        "architecture": {
+            "style": "Modular service-oriented backend",
+            "api_type": "Internal JSON-based API",
+            "persistence": "Local-first (browser or filesystem), extensible later"
+        }
+    },
+    "project_state": {
+        "format": "JSON",
+        "authoritative": true,
+        "sections": [
+            "purpose",
+            "constraints",
+            "app_archetype",
+            "features",
+            "data_model",
+            "frontend_design",
+            "backend_design",
+            "ai_usage",
+            "non_functional_requirements"
+        ],
+        "mutation_rules": {
+            "only_on_explicit_decisions": true,
+            "intent_classification_required": true,
+            "schema_validated": true
+        }
+    },
+    "guided_roadmap": {
+        "type": "Linear with optional overrides",
+        "storage": {
+            "format": "Data-driven JSON schema",
+            "question_ids_stable": true,
+            "answers_stored_by_id": true
+        },
+        "baseline_questions": "A-to-Z core software design questions",
+        "dynamic_questions": {
+            "generated_by": [
+                "Feature selection",
+                "Ambiguity detection",
+                "Architectural pattern recognition"
+            ],
+            "stored_as_first_class": true
+        },
+        "fallbacks": {
+            "ai_default_available": true,
+            "defaults_are_valid_choices": true
+        }
+    },
+    "ai_orchestration": {
+        "models": {
+            "intent_classifier": "Lightweight LLM",
+            "option_generator": "LLM",
+            "structured_extractor": "LLM with schema enforcement",
+            "summariser": "LLM (optional)"
+        },
+        "rules": {
+            "no_chat_history_replay": true,
+            "context_from_state_only": true,
+            "no_freeform_state_changes": true
+        }
+    },
+    "context_management": {
+        "llm_context_includes": [
+            "Canonical project JSON",
+            "Current phase context",
+            "Current question or task"
+        ],
+        "llm_context_excludes": [
+            "Full chat history",
+            "Past reasoning",
+            "Unrelated messages"
+        ],
+        "token_efficiency": {
+            "json_compact": true,
+            "summaries_preferred": true
+        }
+    },
+    "checkpoints": {
+        "created_on": [
+            "Phase completion",
+            "Explicit user decision",
+            "Specification mutation"
+        ],
+        "storage": {
+            "type": "Timestamped snapshots",
+            "contains": "Entire project state"
+        },
+        "behavior": {
+            "revert_restores_state": true,
+            "future_checkpoints_invalidated": true
+        }
+    },
+    "artifact_generation": {
+        "documentation": {
+            "type": "Human-readable",
+            "source": "Project JSON",
+            "purpose": "User understanding and review"
+        },
+        "roadmap": {
+            "type": "Implementation phases with checklists",
+            "derived_from": [
+                "Project JSON",
+                "Feature flags",
+                "Technology selections"
+            ]
+        },
+        "prompt_list": {
+            "type": "Sequential AI execution prompts",
+            "derived_from": "Implementation roadmap",
+            "rules": [
+                "One prompt per responsibility",
+                "Ordered execution",
+                "Context-bounded using JSON subsets",
+                "No hallucinated features"
+            ]
+        }
+    },
+    "export": {
+        "formats": [
+            "JSON specification",
+            "Text documentation",
+            "Implementation roadmap",
+            "Prompt list"
+        ],
+        "target": "External AI IDEs (Cursor, Windsurf, Replit, etc.)"
+    },
+    "non_goals": [
+        "Replacing AI IDEs",
+        "Executing code",
+        "Automatic deployment",
+        "Opinionated frameworks beyond recommendations"
+    ],
+    "mvp_definition": {
+        "complete_when": [
+            "All core roadmap questions answered",
+            "Specification validated",
+            "Artifacts generated successfully",
+            "Prompts usable to bootstrap a working MVP"
+        ]
+    }
+}

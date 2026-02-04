@@ -1,0 +1,486 @@
+{
+    "version": "1.0.0",
+    "metadata": {
+        "title": "Alchemy Guided Roadmap",
+        "description": "Linear question flow for software project specification",
+        "totalQuestions": 12
+    },
+    "questions": [
+        {
+            "id": "Q001",
+            "order": 1,
+            "category": "foundation",
+            "question": "What type of application are you building?",
+            "description": "This helps us understand the fundamental architecture and deployment model.",
+            "fieldPath": "architecture.archetype",
+            "answers": [
+                {
+                    "id": "web-app",
+                    "label": "Web Application",
+                    "description": "Browser-based application with frontend and backend",
+                    "value": "web-app",
+                    "recommended": true
+                },
+                {
+                    "id": "mobile-app",
+                    "label": "Mobile Application",
+                    "description": "Native or cross-platform mobile app",
+                    "value": "mobile-app",
+                    "recommended": true
+                },
+                {
+                    "id": "api-service",
+                    "label": "API Service",
+                    "description": "Backend-only service with REST/GraphQL API",
+                    "value": "api-service",
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "web-app",
+            "skipCondition": null
+        },
+        {
+            "id": "Q002",
+            "order": 2,
+            "category": "foundation",
+            "question": "Who is your primary target user?",
+            "description": "Understanding your audience shapes feature prioritization and UX decisions.",
+            "fieldPath": "project.targetAudience",
+            "answers": [
+                {
+                    "id": "solo-dev",
+                    "label": "Solo Developers",
+                    "description": "Individual developers building side projects",
+                    "value": [
+                        "Solo developers",
+                        "Indie hackers"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "id": "small-team",
+                    "label": "Small Teams",
+                    "description": "Startups and small development teams (2-10 people)",
+                    "value": [
+                        "Small teams",
+                        "Startups"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "id": "enterprise",
+                    "label": "Enterprise Users",
+                    "description": "Large organizations with complex requirements",
+                    "value": [
+                        "Enterprise users",
+                        "Large organizations"
+                    ],
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "solo-dev",
+            "skipCondition": null
+        },
+        {
+            "id": "Q003",
+            "order": 3,
+            "category": "requirements",
+            "question": "What are the 3 most critical features for your MVP?",
+            "description": "Focus on the core value proposition. What must work for v1?",
+            "fieldPath": "requirements.functional",
+            "answers": [
+                {
+                    "id": "user-auth",
+                    "label": "User Authentication",
+                    "description": "Sign up, login, password reset",
+                    "value": {
+                        "id": "FR-001",
+                        "title": "User Authentication",
+                        "description": "Users can sign up, log in, and manage their accounts",
+                        "priority": "critical"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "data-crud",
+                    "label": "Data Management",
+                    "description": "Create, read, update, delete core entities",
+                    "value": {
+                        "id": "FR-002",
+                        "title": "Data Management",
+                        "description": "Users can create, view, edit, and delete their data",
+                        "priority": "critical"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "real-time",
+                    "label": "Real-time Updates",
+                    "description": "Live data synchronization across clients",
+                    "value": {
+                        "id": "FR-003",
+                        "title": "Real-time Updates",
+                        "description": "Changes are reflected in real-time across all connected clients",
+                        "priority": "high"
+                    },
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "data-crud",
+            "skipCondition": null,
+            "multiSelect": true,
+            "maxSelections": 3
+        },
+        {
+            "id": "Q004",
+            "order": 4,
+            "category": "architecture",
+            "question": "What's your preferred frontend framework?",
+            "description": "Choose based on your team's expertise and project requirements.",
+            "fieldPath": "architecture.frontend.framework",
+            "answers": [
+                {
+                    "id": "react",
+                    "label": "React",
+                    "description": "Popular, flexible, large ecosystem",
+                    "value": "React + Vite + TypeScript",
+                    "recommended": true
+                },
+                {
+                    "id": "vue",
+                    "label": "Vue.js",
+                    "description": "Progressive, easy to learn, great docs",
+                    "value": "Vue 3 + Vite + TypeScript",
+                    "recommended": true
+                },
+                {
+                    "id": "svelte",
+                    "label": "Svelte",
+                    "description": "Compile-time framework, minimal runtime",
+                    "value": "SvelteKit + TypeScript",
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "react",
+            "skipCondition": {
+                "field": "architecture.archetype",
+                "notEquals": "web-app"
+            }
+        },
+        {
+            "id": "Q005",
+            "order": 5,
+            "category": "architecture",
+            "question": "What's your preferred backend framework?",
+            "description": "Choose based on performance needs, team expertise, and ecosystem.",
+            "fieldPath": "architecture.backend.framework",
+            "answers": [
+                {
+                    "id": "fastapi",
+                    "label": "FastAPI (Python)",
+                    "description": "Modern, fast, automatic API docs",
+                    "value": "FastAPI",
+                    "recommended": true
+                },
+                {
+                    "id": "express",
+                    "label": "Express (Node.js)",
+                    "description": "Minimal, flexible, JavaScript/TypeScript",
+                    "value": "Express + TypeScript",
+                    "recommended": true
+                },
+                {
+                    "id": "django",
+                    "label": "Django (Python)",
+                    "description": "Batteries-included, ORM, admin panel",
+                    "value": "Django + Django REST Framework",
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "fastapi",
+            "skipCondition": null
+        },
+        {
+            "id": "Q006",
+            "order": 6,
+            "category": "architecture",
+            "question": "What database will you use?",
+            "description": "Consider data structure, scale, and query patterns.",
+            "fieldPath": "architecture.backend.database.type",
+            "answers": [
+                {
+                    "id": "postgresql",
+                    "label": "PostgreSQL",
+                    "description": "Relational, ACID compliant, feature-rich",
+                    "value": "sql",
+                    "metadata": {
+                        "technology": "PostgreSQL"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "mongodb",
+                    "label": "MongoDB",
+                    "description": "Document-based, flexible schema",
+                    "value": "nosql",
+                    "metadata": {
+                        "technology": "MongoDB"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "none",
+                    "label": "No Database (MVP)",
+                    "description": "Start with in-memory or file storage",
+                    "value": "none",
+                    "metadata": {
+                        "technology": null
+                    },
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "postgresql",
+            "skipCondition": null
+        },
+        {
+            "id": "Q007",
+            "order": 7,
+            "category": "architecture",
+            "question": "How will users authenticate?",
+            "description": "Authentication strategy impacts security and user experience.",
+            "fieldPath": "architecture.integration.authentication",
+            "answers": [
+                {
+                    "id": "jwt",
+                    "label": "JWT Tokens",
+                    "description": "Stateless, scalable, works well with SPAs",
+                    "value": "jwt",
+                    "recommended": true
+                },
+                {
+                    "id": "oauth",
+                    "label": "OAuth 2.0",
+                    "description": "Social login (Google, GitHub, etc.)",
+                    "value": "oauth",
+                    "recommended": true
+                },
+                {
+                    "id": "none-mvp",
+                    "label": "No Auth (MVP)",
+                    "description": "Skip authentication for initial prototype",
+                    "value": "none",
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "jwt",
+            "skipCondition": null
+        },
+        {
+            "id": "Q008",
+            "order": 8,
+            "category": "requirements",
+            "question": "What are your top 3 non-functional requirements?",
+            "description": "These define quality attributes beyond features.",
+            "fieldPath": "requirements.nonFunctional",
+            "answers": [
+                {
+                    "id": "performance",
+                    "label": "Performance",
+                    "description": "Fast load times, responsive UI",
+                    "value": {
+                        "category": "performance",
+                        "items": [
+                            "Page load < 2 seconds",
+                            "API response < 500ms"
+                        ]
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "security",
+                    "label": "Security",
+                    "description": "Data protection, secure authentication",
+                    "value": {
+                        "category": "security",
+                        "items": [
+                            "HTTPS only",
+                            "Input validation",
+                            "SQL injection prevention"
+                        ]
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "scalability",
+                    "label": "Scalability",
+                    "description": "Handle growing user base",
+                    "value": {
+                        "category": "scalability",
+                        "items": [
+                            "Support 10,000+ concurrent users",
+                            "Horizontal scaling"
+                        ]
+                    },
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "performance",
+            "skipCondition": null,
+            "multiSelect": true,
+            "maxSelections": 3
+        },
+        {
+            "id": "Q009",
+            "order": 9,
+            "category": "constraints",
+            "question": "What are your main project constraints?",
+            "description": "Understanding limitations helps set realistic expectations.",
+            "fieldPath": "project.constraints",
+            "answers": [
+                {
+                    "id": "timeline",
+                    "label": "Timeline",
+                    "description": "Need to launch quickly (< 3 months)",
+                    "value": {
+                        "type": "timeline",
+                        "description": "MVP must launch within 3 months"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "budget",
+                    "label": "Budget",
+                    "description": "Limited budget for infrastructure/services",
+                    "value": {
+                        "type": "budget",
+                        "description": "Minimize infrastructure costs, use free tiers"
+                    },
+                    "recommended": true
+                },
+                {
+                    "id": "technical",
+                    "label": "Technical",
+                    "description": "Must work offline or have specific tech requirements",
+                    "value": {
+                        "type": "technical",
+                        "description": "Must support offline mode"
+                    },
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "timeline",
+            "skipCondition": null,
+            "multiSelect": true
+        },
+        {
+            "id": "Q010",
+            "order": 10,
+            "category": "deployment",
+            "question": "Where will you deploy your application?",
+            "description": "Deployment model affects architecture and infrastructure decisions.",
+            "fieldPath": "architecture.deploymentModel",
+            "answers": [
+                {
+                    "id": "cloud",
+                    "label": "Cloud (AWS, GCP, Azure)",
+                    "description": "Scalable, managed services, pay-as-you-go",
+                    "value": "cloud",
+                    "recommended": true
+                },
+                {
+                    "id": "local",
+                    "label": "Local/Desktop",
+                    "description": "Runs on user's machine, no server needed",
+                    "value": "local-only",
+                    "recommended": true
+                },
+                {
+                    "id": "hybrid",
+                    "label": "Hybrid",
+                    "description": "Mix of cloud and on-premise",
+                    "value": "hybrid",
+                    "recommended": false
+                }
+            ],
+            "aiDefault": "cloud",
+            "skipCondition": null
+        },
+        {
+            "id": "Q011",
+            "order": 11,
+            "category": "ui",
+            "question": "What's your UI/UX approach?",
+            "description": "This affects styling choices and component libraries.",
+            "fieldPath": "architecture.frontend.styling",
+            "answers": [
+                {
+                    "id": "tailwind",
+                    "label": "Tailwind CSS",
+                    "description": "Utility-first, highly customizable",
+                    "value": "Tailwind CSS + Shadcn UI",
+                    "recommended": true
+                },
+                {
+                    "id": "material",
+                    "label": "Material UI",
+                    "description": "Google's design system, pre-built components",
+                    "value": "Material UI",
+                    "recommended": true
+                },
+                {
+                    "id": "custom",
+                    "label": "Custom CSS",
+                    "description": "Full control, no framework overhead",
+                    "value": "Custom CSS Modules",
+                    "recommended": false
+                }
+            ],
+            "aiDefault": "tailwind",
+            "skipCondition": {
+                "field": "architecture.archetype",
+                "notEquals": "web-app"
+            }
+        },
+        {
+            "id": "Q012",
+            "order": 12,
+            "category": "ai",
+            "question": "Will your application use AI features?",
+            "description": "AI integration affects architecture and external service dependencies.",
+            "fieldPath": "aiUsage.features",
+            "answers": [
+                {
+                    "id": "no-ai",
+                    "label": "No AI Features",
+                    "description": "Traditional application without AI",
+                    "value": [],
+                    "recommended": true
+                },
+                {
+                    "id": "text-ai",
+                    "label": "Text Generation/Analysis",
+                    "description": "Content generation, summarization, classification",
+                    "value": [
+                        "Text generation",
+                        "Content analysis",
+                        "Summarization"
+                    ],
+                    "recommended": true
+                },
+                {
+                    "id": "chat-ai",
+                    "label": "Conversational AI",
+                    "description": "Chatbots, virtual assistants",
+                    "value": [
+                        "Chatbot",
+                        "Virtual assistant",
+                        "Conversational interface"
+                    ],
+                    "recommended": true
+                }
+            ],
+            "aiDefault": "no-ai",
+            "skipCondition": null
+        }
+    ]
+}
